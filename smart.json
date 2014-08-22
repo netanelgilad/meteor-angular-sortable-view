@@ -1,0 +1,19 @@
+{
+  "name": "angular-sortable-view",
+  "description": "Fully declarative (multi)sortable for AngularJS",
+  "homepage": "https://github.com/netanelgilad/meteor-angular-sortable-view",
+  "author": "Netanel Gilad <netanelgilad@gmail.com>",
+  "git": "https://github.com/netanelgilad/meteor-angular-sortable-view.git",
+  "version": "0.0.1",
+  "packages": {
+    "bower": {
+      "version": "0.1.10"
+    }
+  },
+  "bower": {
+    "angular-sortable-view" : {
+      "source" : "netanelgilad/angular-sortable-view",
+      "version" : "042d7f1824d9cb4bf0959f3c574a83e4890577b0"
+    }
+  }
+}
