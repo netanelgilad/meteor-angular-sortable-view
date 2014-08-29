@@ -1,26 +1,21 @@
 Package.describe({
-  summary: "Fully declarative (multi)sortable for AngularJS"
+  summary: "Fully declarative (multi)sortable for AngularJS",
+  version: "0.0.1",
+  git: "https://github.com/netanelgilad/meteor-angular-sortable-view.git"
 });
 
-function packageExists(pkgname) {
-  var fs = Npm.require('fs');
-  var path = Npm.require('path');
-  var pkgpath = path.join('packages', pkgname);
-  return fs.existsSync(pkgpath);
-}
+Package.onUse(function(api) {
+  api.versionsFrom('METEOR@0.9.0.1');
+  api.use('urigo:ngmeteor@0.2.0', 'client');
 
-Package.on_use(function (api) {
-  api.use('bower', 'client');
-
-  if (packageExists('angularite')) {
-    api.use('angularite', 'client');
-  } else if (packageExists('ngMeteor')) {
-    api.use('ngMeteor', 'client');
-  }
-
-  // Install bower components.
-  api.add_files('smart.json', 'client');
+  api.addFiles('angular-sortable-view.min.js', 'client');
 
   // Client files.
-  api.add_files('init.js', 'client');
+  api.addFiles('init.js', 'client');
+});
+
+Package.onTest(function(api) {
+  api.use('tinytest');
+  api.use('netanelgilad:angular-sortable-view');
+  api.addFiles('netanelgilad:angular-sortable-view-tests.js');
 });
