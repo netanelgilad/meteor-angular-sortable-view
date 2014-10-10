@@ -6,7 +6,7 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('METEOR@0.9.0.1');
-  api.use('urigo:ngmeteor@0.2.0', 'client');
+  api.use('urigo:angular@0.4.2', 'client');
 
   api.addFiles('angular-sortable-view.min.js', 'client');
 

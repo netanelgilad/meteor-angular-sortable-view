@@ -1,6 +1,6 @@
 Meteor.startup(function() {
-    if (typeof(ngMeteor) !== 'undefined') {
-        ngMeteor.requires.push('angular-sortable-view');
+    if (typeof(angularMeteor) !== 'undefined') {
+      angularMeteor.requires.push('angular-sortable-view');
     }
 });
 
