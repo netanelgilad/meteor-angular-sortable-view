@@ -1,6 +1,6 @@
 Package.describe({
   summary: "Fully declarative (multi)sortable for AngularJS",
-  version: "0.0.1",
+  version: "0.0.2",
   git: "https://github.com/netanelgilad/meteor-angular-sortable-view.git"
 });
 
