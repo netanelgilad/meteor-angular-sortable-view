@@ -1,6 +1,6 @@
 Package.describe({
   summary: "Fully declarative (multi)sortable for AngularJS",
-  version: "0.0.4",
+  version: "0.0.13",
   git: "https://github.com/netanelgilad/meteor-angular-sortable-view.git",
   name: "netanelgilad:angular-sortable-view"
 });
@@ -11,9 +11,6 @@ Package.onUse(function(api) {
   api.use('urigo:angular@0.7.2', 'client');
 
   api.addFiles('angular-sortable-view.js', 'client');
-
-  // Client files.
-  api.addFiles('init.js', 'client');
 });
 
 Package.onTest(function(api) {
